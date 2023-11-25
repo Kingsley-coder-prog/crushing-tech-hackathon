@@ -19,6 +19,12 @@ White: #FFFFFF, Background: #F1F1F1
 
 :root {
   /* --primary-color: red; */
+  --navheader-background: #1a1a1a;
+  --search-icon-text: #b5b5b5;
+  --search-bar-border: #616161;
+  --search-bar-background: #303030;
+  --store-name: #e3e3e3;
+  --brand-initials: #36fba1;
 }
 
 html {
@@ -31,10 +37,107 @@ html {
 body {
   /* background: var(--primary-color); */
   display: flex;
-  width: 1440px;
+  /* width: 1440px; */
   height: 900px;
   padding-bottom: 0px;
   flex-direction: column;
   align-items: center;
   gap: 32px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--navheader-background);
+}
+
+.shopify-logo {
+  width: 104.868px;
+  height: 30px;
+}
+
+.search-bar {
+  display: flex;
+  width: 480px;
+  height: 32px;
+  padding: 8px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  border: 1px solid var(--search-bar-border);
+  background: var(--search-bar-background);
+}
+
+.search-bar .search-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.search-bar .search-text {
+  color: var(--search-icon-text);
+
+  /* Text-13/medium */
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 18.2px */
+}
+
+.user-profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 8px;
+  /* flex: 1 0 0; */
+}
+
+.notification-bell {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--search-bar-background);
+}
+
+.user-dp {
+  display: flex;
+  padding: 2px 2px 2px 8px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--search-bar-background);
+}
+
+.user-dp .user-name {
+  color: var(--store-name);
+  /* leading-trim: both;
+  text-edge: cap; */
+
+  /* Text-12/medium */
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 15.6px */
+}
+
+.user-dp .user-initials {
+  display: flex;
+  height: 28px;
+  padding: 9px 5px 10px 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--brand-initials);
 }
