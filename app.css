@@ -1,1 +1,40 @@
+/* 
+Grey: Shades used in the Shopify Nav bar
+#656266, #616161, #322F33, #1C181D  
+Font Color: Color shades used for the font on the Shopify design layout
+#E3E3E3, #616161, #475467
+Strokes: Used for the strokes on the design layout
+#EBEBEB, #000000/7%, #FFFFFF/20%
+States: Colors used for different states of the interactive components
+Hover: #F7F7F7, Pressed: #F0F0F0, Focused: #005BD3
+Plain: White and the layout background color
+White: #FFFFFF, Background: #F1F1F1
+*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* --primary-color: red; */
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  /* background: var(--primary-color); */
+  display: flex;
+  width: 1440px;
+  height: 900px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
