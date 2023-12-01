@@ -394,6 +394,7 @@ White: #FFFFFF, Background: #F1F1F1
   --dotted-circle: ##8a8a8a;
   --select-plan-hover: #f7f7ff;
   --select-plan-active: #e2e2e2;
+  --line-one-two: #e1e1e1;
 }
 
 html {
@@ -555,6 +556,95 @@ input::placeholder {
   background: var(--brand-initials);
 }
 
+/* USER PROFILE DROPDOWN */
+.profile-dropdown-container {
+  display: flex;
+  /* display: none; */
+  width: 320px;
+  padding: 6px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border-radius: 14px;
+  border: 1px solid var(--onboarding-step-border);
+  background: var(--white-text);
+
+  /* Drop Shadow */
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.profile-first-item,
+.profile-second-item,
+.profile-third-item {
+  display: flex;
+  padding: 0px 6px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.top-text {
+  display: flex;
+  padding: 4px 12px 4px 8px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--states-hover, #f1f1f1);
+}
+
+.top-text .first-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-text svg {
+  width: 16px;
+  height: 16px;
+}
+
+.next-item {
+  display: flex;
+  padding: 6px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+}
+
+.next-item svg {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-item p {
+  color: var(--search-bar-background);
+
+  /* Text-13/regular */
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 18.2px */
+}
+
+.profile-second-item {
+}
+.profile-third-item {
+}
+
+.line-one,
+.line-two {
+  width: 320px;
+  height: 0.75px;
+  background: var(--line-one-two);
+}
+
 /* MAIN */
 .main-header {
   display: flex;
@@ -684,6 +774,7 @@ input::placeholder {
 }
 
 .main-body-content {
+  /* display: none; */
   display: flex;
   padding: 8px;
   justify-content: space-between;
@@ -729,7 +820,7 @@ input::placeholder {
 .second-item {
   /* display: none; */
   display: flex;
-  max-width: 800px;
+  width: 800px;
   /* height: 431px; */
   padding: 8px;
   flex-direction: column;
@@ -750,7 +841,8 @@ input::placeholder {
 }
 
 .all-onboarding-step {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   align-items: flex-end;
   gap: 2px;
