@@ -562,8 +562,8 @@ input::placeholder {
   position: absolute;
   left: 98%;
   top: -10%;
-  display: flex;
-  /* display: none; */
+  /* display: flex; */
+  display: none;
   width: 320px;
   height: 384px;
   padding: 6px 0px;
@@ -605,7 +605,8 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 141px;
+  width: 60%;
+  /* width: 141px; */
   height: 28px;
 }
 
@@ -628,7 +629,7 @@ input::placeholder {
   line-height: 140%;
 }
 
-.top-text svg {
+.class-tick svg {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
@@ -868,7 +869,7 @@ main {
   border-radius: 6px;
 }
 
-.main-body-right .arrow-icon-down {
+.main-body-right svg {
   width: 20px;
   height: 20px;
   /* fill: var(--dotted-circle); */
@@ -906,8 +907,40 @@ main {
   /* width: 800px; */
   flex-direction: column;
   align-items: flex-end;
-  gap: 2px;
+  gap: 10px;
   align-self: stretch;
+}
+
+.pre-onboarding-step {
+  display: flex;
+  flex-direction: column;
+}
+
+.plain-onboarding {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+  padding: 8px 8px 12px 8px;
+}
+
+.plain-onboarding svg {
+  width: 24px;
+  height: 24px;
+}
+
+.plain-onboarding h2 {
+  display: flex;
+  align-self: center;
+  color: var(--search-bar-background);
+
+  /* Text-13/semi bold */
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 18.2px */
+  cursor: pointer;
 }
 
 .onboarding-step {
@@ -917,12 +950,8 @@ main {
   gap: 96px;
   align-self: stretch;
   border-radius: 10px;
-}
-
-/* .open-state {
-  display: none;
   background: var(--import-button);
-} */
+}
 
 .onboarding-step .onboarding-left {
   display: flex;
@@ -931,7 +960,7 @@ main {
   flex: 1 0 0;
 }
 
-.onboarding-step .onboarding-left svg {
+.circle-checkbox svg {
   width: 24px;
   height: 24px;
   /* stroke: var(--dotted-circle); */
