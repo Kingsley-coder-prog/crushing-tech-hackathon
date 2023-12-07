@@ -906,7 +906,7 @@ main {
   width: 100%;
   /* width: 800px; */
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   gap: 10px;
   align-self: stretch;
 }
@@ -922,11 +922,6 @@ main {
   gap: 8px;
   flex: 1 0 0;
   padding: 8px 8px 12px 8px;
-}
-
-.plain-onboarding svg {
-  width: 24px;
-  height: 24px;
 }
 
 .plain-onboarding h2 {
@@ -945,6 +940,7 @@ main {
 
 .onboarding-step {
   display: flex;
+  /* display: none; */
   padding: 8px 8px 12px 8px;
   align-items: center;
   gap: 96px;
@@ -960,10 +956,11 @@ main {
   flex: 1 0 0;
 }
 
-.circle-checkbox svg {
+.circle-checkbox svg,
+.plain-onboarding svg {
   width: 24px;
   height: 24px;
-  /* stroke: var(--dotted-circle); */
+  stroke: #8a8a8a;
 }
 
 .onboarding-left-text {
@@ -1139,7 +1136,7 @@ main {
   line-height: 130%; /* 15.6px */
 }
 
-.onboarding-step .onboarding-right img {
+.pre-onboarding-step .onboarding-step .onboarding-right img {
   width: 156.145px;
   height: 120px;
 }
