@@ -615,7 +615,7 @@ input::placeholder {
 
 .svg-2:focus {
   stroke-width: 1px;
-  /* stroke: var(--learn-more-btn); */
+  stroke: var(--learn-more-btn);
 }
 
 .dropdown-second-item {
